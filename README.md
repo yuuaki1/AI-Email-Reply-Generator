@@ -57,7 +57,13 @@ This project is an AI-powered email response generator built using **Spring Boot
     - `tone`: Desired tone (string)
   - **Example Request:**
     ```sh
-    GET /api/reply?message=Hello%2C%20I%20need%20help&tone=formal
+    POST /api/reply
+    ```
+    ```json
+    {
+       "message" : "Hey can you help me with this task?",
+       "tone" : "Formal"
+    }
     ```
   - **Response:**
     ```json
@@ -71,11 +77,6 @@ This project is an AI-powered email response generator built using **Spring Boot
 2. Select the desired response tone.
 3. Click "Generate Reply" to receive an AI-crafted response.
 4. Copy the response using the clipboard button.
-
-## To-Do
-- Implement authentication
-- Enhance UI/UX
-- Add email integration
 
 ## Contributing
 Feel free to fork this repo and submit pull requests! 🚀
